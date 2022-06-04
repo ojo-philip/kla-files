@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load hosts %}
+
+{% block content %}
+  <section class="section form-center">
+    <div class="section-head">
+      <h3>Your form has been submitted successfully.</h3>
+      <br>
+      <a href="{% host_url 'home_page' host 'main' %}" class="signup-url"><p>click Return to Home page</p></a>
+      <div class="section-underline"></div>
+    </div>
+      <br>
+      </div>
+  </section>
+
+{% endblock content %}
